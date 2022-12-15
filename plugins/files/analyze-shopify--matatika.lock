@@ -1,0 +1,9 @@
+{
+  "plugin_type": "files",
+  "name": "analyze-shopify",
+  "namespace": "tap_shopify",
+  "variant": "matatika",
+  "label": "analyze-shopify",
+  "repo": "https://github.com/Matatika/analyze-shopify",
+  "pip_url": "git+https://github.com/Matatika/analyze-shopify@v0.1.0"
+}

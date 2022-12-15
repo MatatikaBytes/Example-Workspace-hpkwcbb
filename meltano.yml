@@ -10,6 +10,12 @@ plugins:
   - name: tap-spotify
     variant: matatika
     pip_url: git+https://github.com/Matatika/tap-spotify@v0.3.0
+  - name: tap-shopify
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-shopify@v0.1.0
+  - name: tap-google-analytics
+    variant: meltano
+    pip_url: git+https://github.com/Matatika/tap-google-analytics@v0.3.0
   loaders:
   - name: target-postgres
     variant: transferwise
@@ -18,6 +24,9 @@ plugins:
   - name: dbt-spotify
     variant: spotify
     pip_url: https://github.com/Matatika/dbt-tap-spotify@v0.4.0
+  - name: dbt-google-analytics
+    variant: meltano
+    pip_url: https://github.com/Matatika/dbt-tap-google-analytics@v0.4.0
   transformers:
   - name: dbt
     variant: dbt
@@ -30,3 +39,10 @@ plugins:
   - name: files-dbt
     variant: dbt
     pip_url: git+https://github.com/Matatika/files-dbt@v1.0.x.1
+  - name: analyze-google-analytics
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/analyze-google-analytics@v0.4.0
+  utilities:
+  - name: gdrive
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/utility-gdrive.git@v0.2.0
