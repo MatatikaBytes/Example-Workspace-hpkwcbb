@@ -5,3 +5,28 @@ environments:
 - name: staging
 - name: prod
 project_id: project-cfc586d1-ab72-4c27-b981-8224ecb95137
+plugins:
+  extractors:
+  - name: tap-spotify
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-spotify@v0.3.0
+  loaders:
+  - name: target-postgres
+    variant: transferwise
+    pip_url: git+https://github.com/Matatika/pipelinewise-target-postgres@v0.1.0
+  transforms:
+  - name: dbt-spotify
+    variant: spotify
+    pip_url: https://github.com/Matatika/dbt-tap-spotify@v0.4.0
+  transformers:
+  - name: dbt
+    variant: dbt
+    pip_url: "dbt-core~=1.0.0 dbt-postgres~=1.0.0 dbt-redshift~=1.0.0 dbt-snowflake~=1.0.0\
+      \ dbt-bigquery~=1.0.0\n"
+  files:
+  - name: analyze-spotify
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/analyze-spotify@v0.4.1
+  - name: files-dbt
+    variant: dbt
+    pip_url: git+https://github.com/Matatika/files-dbt@v1.0.x.1

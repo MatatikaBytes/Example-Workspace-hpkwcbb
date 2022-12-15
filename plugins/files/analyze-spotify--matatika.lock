@@ -1,0 +1,27 @@
+{
+  "plugin_type": "files",
+  "name": "analyze-spotify",
+  "namespace": "tap_spotify",
+  "variant": "matatika",
+  "label": "analyze-spotify",
+  "repo": "https://github.com/Matatika/analyze-spotify",
+  "pip_url": "git+https://github.com/Matatika/analyze-spotify@v0.4.1",
+  "update": {
+    "analyze/datasets/tap-spotify/export_global_viral_tracks_daily.yml": "true",
+    "analyze/datasets/tap-spotify/user_top_10_artists_long_term.yml": "true",
+    "analyze/datasets/tap-spotify/user_top_10_artists_medium_term.yml": "true",
+    "analyze/datasets/tap-spotify/count_of_all_genres_of_user_artists_long_term.yml": "true",
+    "analyze/datasets/tap-spotify/global_top_10_tracks_daily.yml": "true",
+    "analyze/datasets/tap-spotify/export_user_tracks_short_term.yml": "true",
+    "analyze/datasets/tap-spotify/count_of_artists_by_tracks_played_short_term.yml": "true",
+    "analyze/datasets/tap-spotify/global_top_10_viral_tracks_daily.yml": "true",
+    "analyze/datasets/tap-spotify/user_top_10_tracks_short_term.yml": "true",
+    "analyze/datasets/tap-spotify/export_global_tracks_daily.yml": "true",
+    "analyze/datasets/tap-spotify/export_global_tracks_weekly.yml": "true",
+    "analyze/datasets/tap-spotify/user_top_10_tracks_short_term_popularity.yml": "true",
+    "analyze/datasets/tap-spotify/global_top_10_tracks_weekly.yml": "true",
+    "analyze/datasets/tap-spotify/populatiry_of_top_25_user_tracks_compared_to_top_25_average_medium_term.yml": "true",
+    "analyze/datasets/tap-spotify/export_user_artists_short_term.yml": "true",
+    "analyze/datasets/tap-spotify/user_top_10_artists_short_term.yml": "true"
+  }
+}

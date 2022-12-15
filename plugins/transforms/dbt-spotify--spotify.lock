@@ -1,0 +1,12 @@
+{
+  "plugin_type": "transforms",
+  "name": "dbt-spotify",
+  "namespace": "tap_spotify",
+  "variant": "spotify",
+  "label": "dbt-spotify",
+  "repo": "https://github.com/Matatika/dbt-tap-spotify",
+  "pip_url": "https://github.com/Matatika/dbt-tap-spotify@v0.4.0",
+  "vars": {
+    "schema": "{{ env_var('DBT_SOURCE_SCHEMA') }}"
+  }
+}

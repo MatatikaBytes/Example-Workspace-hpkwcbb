@@ -1,0 +1,35 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-spotify",
+  "namespace": "tap_spotify",
+  "variant": "matatika",
+  "label": "Spotify",
+  "docs": "https://www.matatika.com/docs/data-sources/tap-spotify/",
+  "repo": "https://github.com/Matatika/tap-spotify",
+  "pip_url": "git+https://github.com/Matatika/tap-spotify@v0.3.0",
+  "capabilities": [
+    "state",
+    "catalog",
+    "discover"
+  ],
+  "settings": [
+    {
+      "name": "client_id",
+      "kind": "password",
+      "protected": false,
+      "required": "true"
+    },
+    {
+      "name": "client_secret",
+      "kind": "password",
+      "protected": false,
+      "required": "true"
+    },
+    {
+      "name": "refresh_token",
+      "kind": "password",
+      "protected": false,
+      "required": "true"
+    }
+  ]
+}
